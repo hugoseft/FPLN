@@ -61,7 +61,9 @@ def Token_clas_superv(texto):
         
     return tokens
 
+
 class TokenizadorWordPiece:
+
     def __init__(self, vocab_size=150):
         self.vocab_size = vocab_size
         self.vocab = set()
@@ -99,11 +101,9 @@ class TokenizadorWordPiece:
             best_pair = max(pairs, key=pairs.get) 
             p1, p2 = best_pair
             
-           
             new_token = p1 + p2.replace("##", "")
             self.vocab.add(new_token) 
 
-            
             for word in words_freq.keys():
                 split = self.splits[word]
                 new_split = []
@@ -116,6 +116,7 @@ class TokenizadorWordPiece:
                         new_split.append(split[i])
                         i += 1
                 self.splits[word] = new_split
+
 
     def tokenize(self, text):
         tokens = []
@@ -157,6 +158,7 @@ class TokenizadorWordPiece:
     
     
 class TokenizadorBPE:
+    
     def __init__(self, vocab_size=150):
         self.vocab_size = vocab_size
         self.vocab = set()

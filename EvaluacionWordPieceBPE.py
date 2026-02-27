@@ -8,11 +8,9 @@ if __name__ == "__main__":
     with open("test_sentences.txt", "r", encoding="utf-8") as f:
         test_lines = [line.strip() for line in f if line.strip()]
 
-
     corpus_train_completo = " ".join(train_lines)
 
     tamanos_vocabulario = [100, 150, 200]
-
 
     for size in tamanos_vocabulario:
         print(f"\n=========================================")
@@ -28,6 +26,7 @@ if __name__ == "__main__":
         for line in test_lines:
             print(f"Input: '{line}' -> Tokens: {wp_tokenizer.tokenize(line)}")
 
+        # BPE
         print(f"\n--- BPE (Vocab: {size}) ---")
         bpe_tokenizer = TokenizadorBPE(vocab_size=size)
         bpe_tokenizer.train(corpus_train_completo)
