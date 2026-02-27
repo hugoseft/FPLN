@@ -4,6 +4,7 @@ import pickle
 import string
 from ModeloClasificacionSupervisada import extraer_caracteristicas
 
+
 def Token_espacios(texto):
     tokens = texto.split(" ")
     return tokens
@@ -158,7 +159,7 @@ class TokenizadorWordPiece:
     
     
 class TokenizadorBPE:
-    
+
     def __init__(self, vocab_size=150):
         self.vocab_size = vocab_size
         self.vocab = set()
