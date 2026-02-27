@@ -131,7 +131,9 @@ class TokenizadorWordPiece:
             while start < len(word):
                 end = len(word)
                 match = None
-                while end > start:
+                min_len = start + 2 if start == 0 else start + 1
+                
+                while end >= min_len:
                     sub = word[start:end]
                     if start > 0:
                         sub = "##" + sub
