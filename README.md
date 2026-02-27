@@ -17,3 +17,15 @@ ANÁLISIS DE LA GRÁFICA
 3. El Comportamiento del Método SupervisadoDecisiones de Probabilidad: Al clasificar cada carácter para decidir si es una frontera de token o no, el modelo es propenso a errores de predicción según lo aprendido en el entrenamiento.+2Resultado en Gráfica: Su crecimiento es superior al de los métodos clásicos (Espacios) porque cualquier error en la detección de una frontera genera fragmentos de palabras que el sistema registra como tokens únicos nuevos.+1
 
 4. Comparativa de Métodos Clásicos (Espacios vs. Puntuación)Tokenización por Espacios: Es el modelo más básico y el vocabulario crece rápido porque incluye los signos de puntuación pegados a las palabras (ej. "casa" y "casa." se cuentan como dos tokens distintos).+1Tokenización por Puntuación: Es más limpia y compacta. Al tratar los símbolos y emojis como unidades independientes, reduce el número de tokens únicos totales al normalizar las palabras.+1
+
+
+
+
+
+
+
+
+TAREAS PENDIENTES
+
+
+- JUNTAR TODO EL CÓDIGO Y HACER QUE LAS EJECUCIONES SE GUARDEN Y SE ACTUALICEN EN UN ARCHIVO (EJEMPLO "resulados")
