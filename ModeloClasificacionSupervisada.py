@@ -61,7 +61,6 @@ def entrenar_modelo():
     clf.fit(X_train, y_train)
     
     # 4. Guardar el modelo y el vectorizador
-    # Guardamos el "cerebro" para no re-entrenar siempre
     with open("modelo_token.pkl", "wb") as f:
         pickle.dump(clf, f)
     with open("vectorizador.pkl", "wb") as f:
@@ -70,4 +69,5 @@ def entrenar_modelo():
     print("¡Entrenamiento completado! Archivos .pkl generados.")
 
 if __name__ == "__main__":
+
     entrenar_modelo()
