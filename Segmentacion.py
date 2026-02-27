@@ -39,12 +39,13 @@ def Token_clas_superv(texto):
 
     texto_sin_espacios = texto.replace(" ","")
     features_list = []
-    
+
+    # FASE 2: INFERENCIA (PUNTO A)
     for i, char in enumerate(texto_sin_espacios):
         next_c = texto_sin_espacios[i+1] if i+1 < len(texto_sin_espacios) else "EOF"
         features_list.append(extraer_caracteristicas(char, next_c))
     
-    
+    # FASE 2: INFERENCIA (PUNTO B) 
     X_test = vectorizer.transform(features_list) 
     predicciones = clf.predict(X_test)
     
