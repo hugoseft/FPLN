@@ -36,11 +36,11 @@ def Token_clas_superv(texto):
     except FileNotFoundError:
         return ["Error: Ejecuta primero entrenar.py para generar el modelo"]
 
+    texto_sin_espacios = texto.replace(" ","")
     features_list = []
-    texto_seguro = texto  
     
-    for i, char in enumerate(texto_seguro):
-        next_c = texto_seguro[i+1] if i+1 < len(texto_seguro) else "EOF"
+    for i, char in enumerate(texto_sin_espacios):
+        next_c = texto_sin_espacios[i+1] if i+1 < len(texto_sin_espacios) else "EOF"
         features_list.append(extraer_caracteristicas(char, next_c))
     
     
@@ -49,7 +49,7 @@ def Token_clas_superv(texto):
     
     
     palabra_actual = ""
-    for i, char in enumerate(texto_seguro):
+    for i, char in enumerate(texto_sin_espacios):
         palabra_actual += char
         
         if predicciones[i] == 1:
