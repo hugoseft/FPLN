@@ -2,25 +2,28 @@ import matplotlib.pyplot as plt
 import pickle
 from Segmentacion import *
 
-# Optimización para el método supervisado en el análisis
+# Funcion para cargar el modelo supervisado entrenado
 def cargar_modelo_supervisado():
     try:
-        with open("modelo_token.pkl", "rb") as f:
+        with open("Auxiliar/modelo_token.pkl", "rb") as f:
             clf = pickle.load(f)
-        with open("vectorizador.pkl", "rb") as f:
+        with open("Auxiliar/vectorizador.pkl", "rb") as f:
             vectorizer = pickle.load(f)
         return clf, vectorizer
     except FileNotFoundError:
         print("Error: No se encuentran los archivos .pkl. Entrena el modelo primero.")
         return None, None
 
+#Funcion
 def analizar_evolucion():
 
-    with open("majesty_speeches.txt", "r", encoding="utf-8") as f:
+    # Leemos todo el texto y lo juntamos para tener un buen corpus
+    with open("Auxiliar/majesty_speeches.txt", "r", encoding="utf-8") as f:
         oraciones = [line.strip() for line in f if line.strip()]
     
     corpus_completo = " ".join(oraciones)
-    
+
+    # Entrenamos previamente los modelos WordPiece y BPE
     print("Entrenando WordPiece y BPE (Vocab: 3000)...")
     wp = TokenizadorWordPiece(vocab_size=3000)
     wp.train(corpus_completo)
@@ -30,6 +33,7 @@ def analizar_evolucion():
     
     clf, vectorizer = cargar_modelo_supervisado()
     
+    # Metemos todos los métodos de tokenización en un diccionario para evaluarlos juntos
     metodos = {
         "Espacios": lambda x: Token_espacios(x),
         "Puntuación": lambda x: Token_puntuacion(x),
@@ -45,6 +49,7 @@ def analizar_evolucion():
     vocabularios_vistos = {nombre: set() for nombre in metodos}
     eje_x = []
 
+    # Leemos frase por frase y contamos cuántos tokens NUEVOS descubre cada método
     print("Procesando oraciones y calculando vocabularios...")
     for i, oracion in enumerate(oraciones):
         eje_x.append(i + 1)
@@ -54,7 +59,7 @@ def analizar_evolucion():
             resultados[nombre].append(len(vocabularios_vistos[nombre]))
 
 
-    ### GRAFICAMOS TODO
+    # Dibujamos la gráfica para ver la evolución y la guardamos
 
     plt.figure(figsize=(12, 7))
     for nombre, valores in resultados.items():
@@ -65,7 +70,7 @@ def analizar_evolucion():
     plt.ylabel("Tokens Únicos")
     plt.legend()
     plt.grid(True, alpha=0.3)
-    plt.savefig("comparativa_vocabulario.png")
+    plt.savefig("Resultado/comparativa_vocabulario.png")
     print("Gráfica guardada como 'comparativa_vocabulario.png'")
     plt.show()
 

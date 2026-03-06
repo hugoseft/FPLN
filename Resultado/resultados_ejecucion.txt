@@ -1,0 +1,171 @@
+=== RESULTADOS EN TEST_SENTENCES.TXT ===
+
+--- Tokenización por Espacios ---
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['El', 'perro', 'pequeño', 'juega', '🐕.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['El', 'ratón', 'pequeño', 'corre', 'rápido', '🏃\u200d♂️.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['El', 'gato', 'duerme', 'tranquilo', '💤.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['Una', 'rata', 'pequeña', 'persigue', 'un', 'ratón', '🐀.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['El', 'perro', 'persigue', 'un', 'gato', 'grande.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['El', 'juguete', 'del', 'gato', 'cuesta', '$15.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['Los', 'gatos', 'se', 'esconden', 'bajo', 'la', 'mesa.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['El', 'queso', 'cuesta', '$5', 'por', 'pieza.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['El', 'perro', 'ladra', 'al', 'cartero', 'en', 'la', 'puerta', '🚪.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['El', 'sol', 'ilumina', 'el', 'parque', 'y', 'los', 'árboles', '🌳.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['Una', 'bicicleta', 'nueva', 'cuesta', '$200.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['El', 'niño', 'juega', 'con', 'su', 'perro', 'felizmente.']
+
+--- Tokenización por Signos de Puntuación ---
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['El', 'perro', 'pequeño', 'juega', '🐕', '.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['El', 'ratón', 'pequeño', 'corre', 'rápido', '🏃', '\u200d', '♂', '️', '.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['El', 'gato', 'duerme', 'tranquilo', '💤', '.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['Una', 'rata', 'pequeña', 'persigue', 'un', 'ratón', '🐀', '.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['El', 'perro', 'persigue', 'un', 'gato', 'grande', '.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['El', 'juguete', 'del', 'gato', 'cuesta', '$', '15', '.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['Los', 'gatos', 'se', 'esconden', 'bajo', 'la', 'mesa', '.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['El', 'queso', 'cuesta', '$', '5', 'por', 'pieza', '.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['El', 'perro', 'ladra', 'al', 'cartero', 'en', 'la', 'puerta', '🚪', '.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['El', 'sol', 'ilumina', 'el', 'parque', 'y', 'los', 'árboles', '🌳', '.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['Una', 'bicicleta', 'nueva', 'cuesta', '$', '200', '.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['El', 'niño', 'juega', 'con', 'su', 'perro', 'felizmente', '.']
+
+--- Tokenización por N-gramas (n=2) ---
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['El perro', 'perro pequeño', 'pequeño juega', 'juega 🐕.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['El ratón', 'ratón pequeño', 'pequeño corre', 'corre rápido', 'rápido 🏃\u200d♂️.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['El gato', 'gato duerme', 'duerme tranquilo', 'tranquilo 💤.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['Una rata', 'rata pequeña', 'pequeña persigue', 'persigue un', 'un ratón', 'ratón 🐀.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['El perro', 'perro persigue', 'persigue un', 'un gato', 'gato grande.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['El juguete', 'juguete del', 'del gato', 'gato cuesta', 'cuesta $15.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['Los gatos', 'gatos se', 'se esconden', 'esconden bajo', 'bajo la', 'la mesa.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['El queso', 'queso cuesta', 'cuesta $5', '$5 por', 'por pieza.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['El perro', 'perro ladra', 'ladra al', 'al cartero', 'cartero en', 'en la', 'la puerta', 'puerta 🚪.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['El sol', 'sol ilumina', 'ilumina el', 'el parque', 'parque y', 'y los', 'los árboles', 'árboles 🌳.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['Una bicicleta', 'bicicleta nueva', 'nueva cuesta', 'cuesta $200.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['El niño', 'niño juega', 'juega con', 'con su', 'su perro', 'perro felizmente.']
+
+--- Clasificador Supervisado ---
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['El', 'perro', 'pequeño', 'juega🐕.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['Elratón', 'pequeño', 'correrápido🏃\u200d♂️.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['El', 'gatoduermetranquilo💤.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['Unarata', 'pequeña', 'persigueunratón🐀.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['El', 'perro', 'persigueun', 'gato', 'grande.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['El', 'juguetedel', 'gato', 'cuesta', '$15.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['Los', 'gatossees', 'condenba', 'jolamesa.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['El', 'queso', 'cuesta', '$5porpieza.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['El', 'perroladraal', 'carteroenla', 'puerta🚪.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['Elsoliluminael', 'parqueylosárbol', 'es🌳.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['Unabicicl', 'etanueva', 'cuesta', '$200.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['Elniño', 'juega', 'consuperro', 'felizmente.']
+
+=========================================
+   EVALUANDO TAMAÑO DE VOCABULARIO: 100
+=========================================
+
+--- WordPiece (Vocab: 100) ---
+Vocabulario WordPiece (100):
+{'##c', '&', '##ç', '##6', '##,', 'a', 'y', '“', '##n', '##C', "##'", 'F', '##t', '5', 'c', 'u', 'X', '##G', 'B', '##ô', '4', 'k', '##0', '##i', 'Z', '##w', '##;', '##é', '##b', '##k', '##T', '##/', '##~', 'x', '1', '##)', '##o', '##Z', '‘', 'z', 'E', '##-', 'I', '##I', "'", '##á', '[UNK]', 'W', '##m', '##N', '–', 'r', '##l', '##]', '2', '##D', '7', '##g', 'R', '/', 'h', '##R', 't', 'G', 'i', 'd', '##!', 'Q', '##4', 'A', '##z', '##H', '##.', '##S', 'T', 'H', '##1', '##p', '6', '##ê', 'l', 'v', '##è', '##Y', 'p', 'O', '##A', '##P', '##L', '##x', 'L', '##f', '##â', '##s', '##:', '8', 'S', 'j', '##u', '9', 'C', 'à', 'é', '"', '##2', 'M', ',', '##q', 'm', 'q', '##É', '##”', 'g', 'f', '##a', '##B', 'Y', '##v', '##5', '##8', '##3', '-', 'n', 's', '—', '##y', '##M', 'e', '##"', '##E', 'o', '##K', '##h', 'K', '##ù', '##O', '##F', '##U', 'P', 'b', 'V', '##?', 'w', 'N', '3', '##r', '##j', 'D', '##e', '##W', '##d', '##X', '##7', '##9', '(', '##V', '##Q', 'U', '##’', '[', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', 'y', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+
+--- BPE (Vocab: 100) ---
+Vocabulario BPE (100):
+{'&', 'a', 'y', '“', 'F', '5', 'u', 'c', 'X', 'B', '~', '4', 'k', '?', 'Z', 'x', '1', '‘', 'z', 'E', 'I', "'", 'W', 'the', ']', '–', 'r', '2', '7', 'R', '/', '”', 'h', 't', 'G', 'i', 'd', 'Q', 'A', 'T', 'H', '6', 'l', '!', 'v', '.', 'p', 'O', 'L', '8', 'S', ';', 'j', 'ô', '9', 'th', 'C', 'é', ':', '"', 'à', 're', 'M', ',', 'on', 'm', 'q', 'in', 'ù', 'g', 'f', 'Y', '-', 'n', 's', '—', 'É', 'e', '0', 'o', ')', 'è', 'K', 'â', 'P', 'b', 'V', 'ê', 'w', 'N', '3', 'D', 'á', 'ç', '(', 'an', '’', 'U', '[', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['E', 'l', 'p', 'e', 'r', 'r', 'o', 'p', 'e', 'q', 'u', 'e', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', '🐕', '.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['E', 'l', 'r', 'a', 't', 'ó', 'n', 'p', 'e', 'q', 'u', 'e', 'ñ', 'o', 'c', 'o', 'r', 're', 'r', 'á', 'p', 'i', 'd', 'o', '🏃', '\u200d', '♂', '️', '.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['E', 'l', 'g', 'a', 't', 'o', 'd', 'u', 'e', 'r', 'm', 'e', 't', 'r', 'an', 'q', 'u', 'i', 'l', 'o', '💤', '.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['U', 'n', 'a', 'r', 'a', 't', 'a', 'p', 'e', 'q', 'u', 'e', 'ñ', 'a', 'p', 'e', 'r', 's', 'i', 'g', 'u', 'e', 'u', 'n', 'r', 'a', 't', 'ó', 'n', '🐀', '.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['E', 'l', 'p', 'e', 'r', 'r', 'o', 'p', 'e', 'r', 's', 'i', 'g', 'u', 'e', 'u', 'n', 'g', 'a', 't', 'o', 'g', 'r', 'an', 'd', 'e', '.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['E', 'l', 'j', 'u', 'g', 'u', 'e', 't', 'e', 'd', 'e', 'l', 'g', 'a', 't', 'o', 'c', 'u', 'e', 's', 't', 'a', '$', '1', '5', '.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['L', 'o', 's', 'g', 'a', 't', 'o', 's', 's', 'e', 'e', 's', 'c', 'on', 'd', 'e', 'n', 'b', 'a', 'j', 'o', 'l', 'a', 'm', 'e', 's', 'a', '.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['E', 'l', 'q', 'u', 'e', 's', 'o', 'c', 'u', 'e', 's', 't', 'a', '$', '5', 'p', 'o', 'r', 'p', 'i', 'e', 'z', 'a', '.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['E', 'l', 'p', 'e', 'r', 'r', 'o', 'l', 'a', 'd', 'r', 'a', 'a', 'l', 'c', 'a', 'r', 't', 'e', 'r', 'o', 'e', 'n', 'l', 'a', 'p', 'u', 'e', 'r', 't', 'a', '🚪', '.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['E', 'l', 's', 'o', 'l', 'i', 'l', 'u', 'm', 'in', 'a', 'e', 'l', 'p', 'a', 'r', 'q', 'u', 'e', 'y', 'l', 'o', 's', 'á', 'r', 'b', 'o', 'l', 'e', 's', '🌳', '.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['U', 'n', 'a', 'b', 'i', 'c', 'i', 'c', 'l', 'e', 't', 'a', 'n', 'u', 'e', 'v', 'a', 'c', 'u', 'e', 's', 't', 'a', '$', '2', '0', '0', '.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['E', 'l', 'n', 'i', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', 'c', 'on', 's', 'u', 'p', 'e', 'r', 'r', 'o', 'f', 'e', 'l', 'i', 'z', 'm', 'e', 'n', 't', 'e', '.']
+
+=========================================
+   EVALUANDO TAMAÑO DE VOCABULARIO: 150
+=========================================
+
+--- WordPiece (Vocab: 150) ---
+Vocabulario WordPiece (150):
+{'##c', '&', '##ç', '##6', '##,', 'a', 'y', '“', '##n', '##C', "##'", 'F', '##t', '5', 'c', 'u', 'X', '##G', 'B', '##ô', '4', 'k', '##0', '##i', 'Z', '##w', '##;', '##é', '##b', '##k', '##T', '##/', '##~', 'x', '1', '##)', '##o', '##Z', '‘', 'z', 'E', '##-', 'I', '##I', "'", '##á', '[UNK]', 'W', '##m', '##N', '–', 'r', '##l', '##]', '2', '##D', '7', '##g', 'R', '/', 'h', '##R', 't', 'G', 'i', 'd', '##!', 'Q', '##4', 'A', '##z', '##H', '##.', '##S', 'T', 'H', '##1', '##p', '6', '##ê', 'l', 'v', '##è', '##Y', 'p', 'O', '##A', '##P', '##L', '##x', 'L', '##f', '##â', '##s', '##:', '8', 'S', 'j', '##u', '9', 'C', 'à', 'é', '"', '##2', 'M', ',', '##q', 'm', 'q', '##É', '##”', 'g', 'f', '##a', '##B', 'Y', '##v', '##5', '##8', '##3', '-', 'n', 's', '—', '##y', '##M', 'e', '##"', '##E', 'o', '##K', '##h', 'K', '##ù', '##O', '##F', '##U', 'P', 'b', 'V', '##?', 'w', 'N', '3', '##r', '##j', 'D', '##e', '##W', '##d', '##X', '##7', '##9', '(', '##V', '##Q', 'U', '##’', '[', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', 'y', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+
+--- BPE (Vocab: 150) ---
+Vocabulario BPE (150):
+{'&', 'ad', 'a', 'y', '“', 'F', 'have', '5', 'ation', 'u', 'c', 'X', 'B', '~', '4', 'k', '?', 'Z', 'he', 'at', 'x', '1', '‘', 'z', 'E', 'ly', 'I', 'our', "'", 'W', 'st', 'the', 'ed', 'om', ']', 'ha', '–', 'r', 'as', '2', '7', 'we', 'ing', 'R', '/', '”', 'h', 't', 'G', 'i', 'is', 'it', 'd', 'ent', 'op', 'ar', 'Q', 'es', 'A', 'ch', 'T', 'H', '6', 'l', '!', 'al', 'ow', 'that', 'v', '.', 'p', 'O', 'L', 'and', 'am', '8', 'of', 'S', ';', 'j', 'ô', 'se', '9', 'th', 'C', 'é', ':', '"', 'à', 'or', 'ay', 're', 'wh', 'M', ',', 'on', 'm', 'q', 'in', 'il', 'ù', 'de', 'g', 'f', 've', 'Y', 'le', 'ver', '-', 'n', 's', '—', 'É', 'to', 'e', '0', 'ce', 'ut', 'me', 'ir', 'o', 'en', ')', 'è', 'ion', 'K', 'be', 'â', 'P', 'b', 'V', 'for', 'ou', 'ê', 'w', 'N', '3', 'D', 'li', 'ri', 'á', 'ç', '(', 'an', 'pe', '’', 'U', '[', 'er', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'pe', 'q', 'u', 'e', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', '🐕', '.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['E', 'l', 'r', 'at', 'ó', 'n', 'pe', 'q', 'u', 'e', 'ñ', 'o', 'c', 'or', 're', 'r', 'á', 'p', 'i', 'd', 'o', '🏃', '\u200d', '♂', '️', '.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['E', 'l', 'g', 'at', 'o', 'd', 'u', 'er', 'me', 't', 'r', 'an', 'q', 'u', 'il', 'o', '💤', '.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['U', 'n', 'a', 'r', 'at', 'a', 'pe', 'q', 'u', 'e', 'ñ', 'a', 'p', 'er', 's', 'i', 'g', 'u', 'e', 'u', 'n', 'r', 'at', 'ó', 'n', '🐀', '.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'p', 'er', 's', 'i', 'g', 'u', 'e', 'u', 'n', 'g', 'at', 'o', 'g', 'r', 'and', 'e', '.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['E', 'l', 'j', 'u', 'g', 'u', 'e', 't', 'e', 'de', 'l', 'g', 'at', 'o', 'c', 'u', 'es', 't', 'a', '$', '1', '5', '.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['L', 'o', 's', 'g', 'at', 'o', 's', 'se', 'es', 'c', 'on', 'd', 'en', 'b', 'a', 'j', 'o', 'l', 'a', 'm', 'es', 'a', '.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['E', 'l', 'q', 'u', 'es', 'o', 'c', 'u', 'es', 't', 'a', '$', '5', 'p', 'or', 'p', 'i', 'e', 'z', 'a', '.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'l', 'ad', 'r', 'a', 'al', 'c', 'ar', 't', 'er', 'o', 'en', 'l', 'a', 'p', 'u', 'er', 't', 'a', '🚪', '.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['E', 'l', 's', 'o', 'l', 'il', 'u', 'm', 'in', 'a', 'e', 'l', 'p', 'ar', 'q', 'u', 'e', 'y', 'l', 'o', 's', 'á', 'r', 'b', 'o', 'l', 'es', '🌳', '.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['U', 'n', 'a', 'b', 'i', 'c', 'i', 'c', 'le', 't', 'a', 'n', 'u', 'e', 'v', 'a', 'c', 'u', 'es', 't', 'a', '$', '2', '0', '0', '.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['E', 'l', 'n', 'i', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', 'c', 'on', 's', 'u', 'p', 'er', 'r', 'o', 'f', 'e', 'li', 'z', 'm', 'ent', 'e', '.']
+
+=========================================
+   EVALUANDO TAMAÑO DE VOCABULARIO: 200
+=========================================
+
+--- WordPiece (Vocab: 200) ---
+Vocabulario WordPiece (200):
+{'##c', '&', '##ç', '##6', '##,', 'a', 'y', '“', '##n', '##ion', '##C', '##ing', "##'", 'F', '##t', '5', '##re', '##nd', 'c', 'u', 'X', '##as', '##G', 'B', '##ô', '4', '##ur', 'k', '##0', '##se', '##i', '##le', 'Z', '##w', '##;', '##é', '##b', '##k', '##T', '##/', '##~', 'x', '1', '##)', '##en', '##o', '##Z', '‘', 'z', 'E', '##-', 'I', '##I', "'", '##an', '##er', '##á', '[UNK]', 'W', 'the', '##ed', '##m', '##is', '##N', '–', 'r', '##l', '##]', '2', '##D', '7', '##g', 'R', '/', '##it', 'h', '##R', 't', 'G', 'i', 'd', '##!', 'Q', '##at', '##on', '##4', '##ou', 'A', '##z', '##H', '##.', '##in', '##S', 'T', 'H', '##1', '##ce', '##p', '6', '##ê', 'l', 'v', '##è', '##Y', 'p', 'O', '##A', '##P', '##L', '##x', 'L', '##f', '##â', 'and', '##s', '##:', '8', 'S', 'of', 'j', '##u', '9', 'th', 'C', 'à', 'é', '"', '##2', 're', 'wh', 'M', '##ll', ',', '##q', 'm', 'q', '##es', '##É', 'in', '##”', '##ve', 'g', 'f', '##a', '##B', 'Y', '##v', '##5', '##8', '##3', '-', 'n', 's', '—', 'to', '##y', '##M', 'e', '##"', '##E', 'o', '##K', '##ic', '##al', '##h', 'K', 'be', '##ation', '##ù', '##O', '##F', '##U', '##om', '##or', 'P', 'b', 'V', '##?', 'w', 'N', '3', '##r', '##j', 'D', '##e', '##ar', '##W', '##d', '##X', '##7', '##9', '(', '##V', '##Q', '##th', '##ent', 'U', '##’', '[', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', 'y', '[UNK]', '[UNK]', '[UNK]']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]', '[UNK]']
+
+--- BPE (Vocab: 200) ---
+Vocabulario BPE (200):
+{'&', 'res', 'ad', 'a', 'y', '“', 'ity', 'F', 'have', '5', 'ation', 'u', 'c', 'X', 'B', '~', '4', 'k', 'lo', 'oun', 'ul', '?', 'id', 'Z', 'this', 'ear', 'he', 'at', 'x', '1', 'pr', 'ot', '‘', 'mon', 'z', 'E', 'ly', 'I', 'our', "'", 'ld', 'W', 'st', 'the', 'ed', 'ter', 'im', 'are', 'mo', 'man', 'ct', 'you', 'om', ']', 'ha', 'ab', 'all', '–', 'r', 'ers', 'as', '2', '7', 'we', 'ing', 'R', '/', 'un', 'ge', '”', 'ac', 'h', 'year', 't', 'G', 'i', 'is', 'it', 'd', 'ent', 'op', 'mb', 'ar', 'Q', 'The', 'es', 'gh', 'A', 'ch', 'com', 'T', 'H', '6', 'l', '!', 'al', 'tr', 'ow', 'that', 'v', 'ast', '.', 'p', 'O', 'L', 'and', 'am', '8', 'of', 'S', ';', 'j', 'ô', 'se', 's,', '9', 'ic', 'wor', 'th', 'with', 'C', 'é', ':', '"', 'à', 'or', 'ay', 'so', 're', 'fe', 'wh', 'M', ',', 'on', 'm', 'q', 'in', 'il', 'ù', 'de', 'ess', 'g', 'f', 'ies', 'su', 've', 'Y', 'le', 'wi', 'ver', '-', 'n', 's', '—', 'É', 'to', 'ther', 'e', '0', 'ce', 'ut', 'con', 'me', 'ill', 'ir', 'o', 'en', ')', 'è', 'ion', 'K', 'be', 'â', 'us', 'P', 'b', 'V', 'for', 'ou', 'ol', 'ê', 'ur', 'w', 'N', '3', 'D', 'li', 'ri', 'ne', 'á', 'ç', 'peop', '(', 'an', 'pe', '’', 'U', '[', 'er', 'J'}
+
+Input: 'El perro pequeño juega 🐕.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'pe', 'q', 'u', 'e', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', '🐕', '.']
+Input: 'El ratón pequeño corre rápido 🏃‍♂️.' -> Tokens: ['E', 'l', 'r', 'at', 'ó', 'n', 'pe', 'q', 'u', 'e', 'ñ', 'o', 'c', 'or', 're', 'r', 'á', 'p', 'id', 'o', '🏃', '\u200d', '♂', '️', '.']
+Input: 'El gato duerme tranquilo 💤.' -> Tokens: ['E', 'l', 'g', 'at', 'o', 'd', 'u', 'er', 'me', 'tr', 'an', 'q', 'u', 'il', 'o', '💤', '.']
+Input: 'Una rata pequeña persigue un ratón 🐀.' -> Tokens: ['U', 'n', 'a', 'r', 'at', 'a', 'pe', 'q', 'u', 'e', 'ñ', 'a', 'p', 'ers', 'i', 'g', 'u', 'e', 'un', 'r', 'at', 'ó', 'n', '🐀', '.']
+Input: 'El perro persigue un gato grande.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'p', 'ers', 'i', 'g', 'u', 'e', 'un', 'g', 'at', 'o', 'g', 'r', 'and', 'e', '.']
+Input: 'El juguete del gato cuesta $15.' -> Tokens: ['E', 'l', 'j', 'u', 'g', 'u', 'e', 't', 'e', 'de', 'l', 'g', 'at', 'o', 'c', 'u', 'es', 't', 'a', '$', '1', '5', '.']
+Input: 'Los gatos se esconden bajo la mesa.' -> Tokens: ['L', 'o', 's', 'g', 'at', 'o', 's', 'se', 'es', 'con', 'd', 'en', 'b', 'a', 'j', 'o', 'l', 'a', 'm', 'es', 'a', '.']
+Input: 'El queso cuesta $5 por pieza.' -> Tokens: ['E', 'l', 'q', 'u', 'es', 'o', 'c', 'u', 'es', 't', 'a', '$', '5', 'p', 'or', 'p', 'i', 'e', 'z', 'a', '.']
+Input: 'El perro ladra al cartero en la puerta 🚪.' -> Tokens: ['E', 'l', 'p', 'er', 'r', 'o', 'l', 'ad', 'r', 'a', 'al', 'c', 'ar', 'ter', 'o', 'en', 'l', 'a', 'p', 'u', 'er', 't', 'a', '🚪', '.']
+Input: 'El sol ilumina el parque y los árboles 🌳.' -> Tokens: ['E', 'l', 'so', 'l', 'il', 'u', 'm', 'in', 'a', 'e', 'l', 'p', 'ar', 'q', 'u', 'e', 'y', 'lo', 's', 'á', 'r', 'b', 'ol', 'es', '🌳', '.']
+Input: 'Una bicicleta nueva cuesta $200.' -> Tokens: ['U', 'n', 'a', 'b', 'ic', 'ic', 'le', 't', 'a', 'n', 'u', 'e', 'v', 'a', 'c', 'u', 'es', 't', 'a', '$', '2', '0', '0', '.']
+Input: 'El niño juega con su perro felizmente.' -> Tokens: ['E', 'l', 'n', 'i', 'ñ', 'o', 'j', 'u', 'e', 'g', 'a', 'con', 'su', 'p', 'er', 'r', 'o', 'fe', 'li', 'z', 'm', 'ent', 'e', '.']
