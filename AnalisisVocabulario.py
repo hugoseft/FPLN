@@ -14,7 +14,7 @@ def cargar_modelo_supervisado():
         print("Error: No se encuentran los archivos .pkl. Entrena el modelo primero.")
         return None, None
 
-#Funcion
+#Funcion para comparar el vocabulario de los métodos de tokenización
 def analizar_evolucion():
 
     # Leemos todo el texto y lo juntamos para tener un buen corpus
